@@ -462,6 +462,7 @@ Foot Locker HelpDesk`;
 
             // Construct the recent entry object
             const recentEntry = {
+                name,
                 incident,
                 date,
                 phone,
@@ -508,6 +509,7 @@ Foot Locker HelpDesk`;
 
             if (entry) {
                 // Populate form fields with the entry's data
+                document.getElementById("name").value = entry.name;
                 document.getElementById("incident").value = entry.incident;
                 document.getElementById("date").value = entry.date;
                 document.getElementById("phone").value = entry.phone;
